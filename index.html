@@ -1,0 +1,21 @@
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+</head>
+<body></body>
+
+<script type="text/jsx">
+  //define a class. Class is a component which defines structure.
+  //Class must be instantiated then rendered.
+  var HelloWorld = React.createClass({
+    render: function() {
+      return <div>Hello World!</div>
+    }
+  });
+
+  //React, render this class.
+  var element = React.createElement(HelloWorld);
+
+  //React, after rending add it to the body.
+  React.render(element, document.body);
+</script>
